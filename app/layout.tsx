@@ -19,7 +19,13 @@ export const metadata: Metadata = {
   title: "Dispû Dining",
   description: "Authentic Kapampangan Dining in San Fernando",
   icons: {
-    icon: '/Dispu.png',
+    icon: [
+      { url: '/Dispu.png', href: '/Dispu.png' },
+    ],
+    shortcut: ['/Dispu.png'],
+    apple: [
+      { url: '/Dispu.png' },
+    ],
   },
 };
 
