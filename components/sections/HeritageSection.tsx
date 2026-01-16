@@ -38,6 +38,7 @@ export default function HeritageSection() {
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover opacity-80 hover:scale-105 transition-transform duration-700"
+              quality={70}
             />
             {/* Overlay to ensure text readability if needed, though mostly visual here */}
             <div className="absolute inset-0 bg-[#22264b]/20 mix-blend-multiply"></div>

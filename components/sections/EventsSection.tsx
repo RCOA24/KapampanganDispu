@@ -14,7 +14,7 @@ export default function EventsSection() {
           fill
           sizes="100vw"
           className="object-cover"
-          priority
+          quality={60}
         />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>

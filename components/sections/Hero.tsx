@@ -18,6 +18,7 @@ export default function Hero() {
           fill
           className="object-cover opacity-100"
           priority
+          quality={65} // Reduced quality for background pattern
         />
         {/* Gradient Overlay for Fade Effect */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#22264b]/70 via-[#22264b]/70 to-[#22264b]" />
