@@ -21,8 +21,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 body {
   background: var(--background);
   color: var(--foreground);
-  /* antialiased equivalent not directly available in standard css property, handled by tailwind class on body */
+  /* Hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 /* Premium Vignette for Body (Optional) */
 body::before {

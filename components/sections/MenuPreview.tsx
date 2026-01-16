@@ -17,7 +17,7 @@ export default function MenuPreview() {
   const featuredImage = displayedItems[0]?.image || '/images/menu/default-placeholder.jpg';
 
   return (
-    <Section className="bg-[#e6e2d3] text-[#22264b]">
+    <Section id="menu-preview" className="bg-[#e6e2d3] text-[#22264b]">
       <Container>
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-[family-name:var(--font-playfair)] font-bold">

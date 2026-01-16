@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/Elements';
 import { motion } from 'framer-motion';
 
@@ -64,9 +67,11 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="pt-8"
         >
-          <Button size="lg" className="text-lg px-10">
-            View Menu
-          </Button>
+          <Link href="#menu-preview">
+            <Button size="lg" className="text-lg px-10">
+              View Menu
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
