@@ -9,7 +9,10 @@ export default function MessengerRedirect() {
     const isMessenger = /Messenger|FB_IAB|FBAV/i.test(ua);
 
     if (isMessenger) {
-      window.location.href = "https://www.google.com";
+      if (confirm("Open this page in an external browser for the best experience?")) {
+        // Attempt to open the current URL in a new window/system browser
+        window.open(window.location.href, "_blank");
+      }
     }
   }, []);
 

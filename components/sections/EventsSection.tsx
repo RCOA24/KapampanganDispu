@@ -9,7 +9,7 @@ export default function EventsSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/ambiance/events.jpg"
+          src="/images/events/event.jpg"
           alt="Private Events at Dispû"
           fill
           sizes="100vw"
