@@ -20,7 +20,7 @@ export default function Hero() {
           priority
         />
         {/* Gradient Overlay for Fade Effect */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#22264b]/70 via-[#22264b]/40 to-[#22264b]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#22264b]/70 via-[#22264b]/70 to-[#22264b]" />
       </div>
 
       <div className="z-10 max-w-4xl space-y-6">
@@ -47,7 +47,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-[family-name:var(--font-playfair)] leading-tight"
+          className="text-5xl md:text-7xl lg:text-6xl font-[family-name:var(--font-playfair)] leading-tight"
         >
           Authentic Kapampangan Dining in San Fernando
         </motion.h1>
@@ -56,9 +56,10 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.8 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto"
+          className="text-lg md:text-xl font-light tracking-wide max-w-xl mx-auto"
         >
-          Experience the warmth of heritage. Reservations opening soon.
+          Savor soulful Kapampangan food, warm hospitality, and moments that feel like home.
+
         </motion.p>
         
         <motion.div 

@@ -60,7 +60,7 @@ export default function CareerSection() {
 
           {/* CTA */}
           <div className="w-full pt-2">
-            <a href="mailto:dispu301@gmail.com" className="block w-full">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Dispu301@gmail.com&su=Job%20Application%20-%20Disp%C3%BB%20Dining" target="_blank" className="block w-full">
               <Button className="w-full gap-2 relative group/btn" size="lg">
                 <Mail className="w-4 h-4" />
                 <span>Apply via Email</span>

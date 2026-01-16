@@ -21,17 +21,17 @@ export default function MenuPreviewPage() {
       <Navbar onReserveClick={() => setIsResModalOpen(true)} />
       
       {/* Header */}
-      <div className="bg-[#22264b] text-[#e6e2d3] pt-32 pb-16">
-        <Container className="text-center space-y-4 relative">
-           <div className="absolute top-0 left-0">
+      <div className="bg-[#22264b] text-[#e6e2d3] pt-24 md:pt-32 pb-16">
+        <Container className="relative flex flex-col items-center">
+           <div className="w-full mb-8 md:mb-0 md:absolute md:top-0 md:left-0 flex justify-start">
              <Link href="/" className="inline-flex items-center gap-2 text-[#e6e2d3]/60 hover:text-[#e6e2d3] transition-colors text-sm uppercase tracking-widest font-medium">
                <ArrowLeft className="w-4 h-4" />
                Back to Home
              </Link>
            </div>
            
-           <h1 className="text-5xl md:text-7xl font-[family-name:var(--font-playfair)]">Our Menu</h1>
-           <p className="text-[#e6e2d3]/70 text-lg max-w-xl mx-auto font-light">
+           <h1 className="text-5xl md:text-7xl font-[family-name:var(--font-playfair)] mb-4 text-center">Our Menu</h1>
+           <p className="text-[#e6e2d3]/70 text-lg max-w-xl mx-auto font-light text-center">
              A culinary journey through time, featuring heritage recipes and modern interpretations.
            </p>
         </Container>
@@ -62,6 +62,7 @@ export default function MenuPreviewPage() {
                             src={item.image}
                             alt={item.name}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                           />
                         ) : (

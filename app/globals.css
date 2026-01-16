@@ -18,7 +18,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* Base Styles */
-body {
+html, body {
   background: var(--background);
   color: var(--foreground);
   /* Hide scrollbar */
@@ -27,7 +27,7 @@ body {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
 

@@ -63,7 +63,7 @@ export default function InfoSection() {
             <div className="space-y-4 text-[#e6e2d3]/70 font-light leading-relaxed pl-2 border-l border-[#e6e2d3]/10">
               <p className="flex items-center gap-3">
                 <Phone className="w-4 h-4 opacity-50" />
-                <span>+63 (45) 888-1926</span>
+                <span>0966-403-8118</span>
               </p>
               <div className="text-sm space-y-2 pt-2">
                 <p><span className="text-[#e6e2d3] font-medium">Dress Code:</span> Smart Casual</p>

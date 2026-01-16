@@ -14,7 +14,7 @@ export default function HeritageSection() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-playfair)] leading-tight">
             The Dispû Legacy
           </h2>
-          <div className="space-y-6 font-light text-[#e6e2d3]/80 leading-relaxed text-lg">
+          <div className="space-y-6 font-light text-[#e6e2d3]/80 leading-relaxed text-lg text-justify">
             <p>
               Dispû is more than a restaurant; it is a revival of the culinary golden age of Pampanga. Born from a desire to preserve the intricate, labor-intensive recipes of our ancestors, we marry the soul of 1920s San Fernando with the techniques of 2026.
             </p>
@@ -36,6 +36,7 @@ export default function HeritageSection() {
               src="/images/heritage/kitchen-interior.jpg"
               alt="Heritage Kitchen Interior"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover opacity-80 hover:scale-105 transition-transform duration-700"
             />
             {/* Overlay to ensure text readability if needed, though mostly visual here */}
