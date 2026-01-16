@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 import Navbar from '@/components/sections/Navbar';
 import Footer from '@/components/sections/Footer';
 import ReservationModal from '@/components/sections/ReservationModal';
@@ -20,7 +22,14 @@ export default function MenuPage() {
       
       {/* Header */}
       <div className="bg-[#22264b] text-[#e6e2d3] pt-32 pb-16">
-        <Container className="text-center space-y-4">
+        <Container className="text-center space-y-4 relative">
+           <div className="absolute top-0 left-0">
+             <Link href="/" className="inline-flex items-center gap-2 text-[#e6e2d3]/60 hover:text-[#e6e2d3] transition-colors text-sm uppercase tracking-widest font-medium">
+               <ArrowLeft className="w-4 h-4" />
+               Back to Home
+             </Link>
+           </div>
+           
            <h1 className="text-5xl md:text-7xl font-[family-name:var(--font-playfair)]">Our Menu</h1>
            <p className="text-[#e6e2d3]/70 text-lg max-w-xl mx-auto font-light">
              A culinary journey through time, featuring heritage recipes and modern interpretations.
