@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dispû Dining
 
-## Getting Started
+**Preserving Heritage, Elevating Tradition.**
 
-First, run the development server:
+Dispû is a digital experience crafted for a high-end Kapampangan restaurant that marries the soul of 1920s San Fernando with contemporary culinary techniques. This project serves as a modern touchpoint for a brand built on legacy, offering an immersive introduction to authentic Kapampangan cuisine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Project Highlights
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   **Immersive Visual Storytelling**: A design language built on "Modern Heritage"—combining classical typography (*Playfair Display*) with modern layout principles using a sophisticated palette of Deep Navy (`#22264b`) and Antique Cream (`#e6e2d3`).
+-   **Seamless User Experience**:
+    -   Fully responsive design optimized for all devices, preventing horizontal scroll issues on mobile.
+    -   **Smart User Agent Detection**: Includes a custom `MessengerRedirect` component to guide users from in-app browsers (like Facebook Messenger) to full features browsers (Chrome/Safari) for an optimal experience.
+    -   **Context-Aware Interactions**: Career application buttons intelligently switch between Gmail Web (Desktop) and Native Mail App (Mobile).
+-   **Performance & SEO**: Built on Next.js 16 (App Router) with JSON-LD structured data for rich search integration (Restaurant Schema, Hours, Location).
+-   **Interactive Elements**: Smooth scroll reveals, hover interactions on galleries, and a polished menu preview system powered by Framer Motion.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   **Framework**: Next.js 16 (App Router)
+-   **Styling**: Tailwind CSS 4
+-   **Animation**: Framer Motion
+-   **Font Optimization**: `next/font` (Playfair Display & Inter)
+-   **Icons**: Lucide React
+-   **Deployment**: Netlify
 
-## Learn More
+## 👨‍💻 Credits
 
-To learn more about Next.js, take a look at the following resources:
+**Created by Rodney Charles O. Austria**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A showcase of modern web development bridging cultural narratives with digital precision. This project demonstrates expertise in:
+-   Component-Based Architecture
+-   Responsive & Adaptive User Interfaces
+-   Technical SEO Implementation
+-   Brand Identity Translation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
+*© 2026 Dispû Dining. All Rights Reserved.*
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

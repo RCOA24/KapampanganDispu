@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import { Mail, Briefcase, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Elements';
 import { motion } from 'framer-motion';
@@ -17,6 +19,18 @@ const openPositions: Position[] = [
 ];
 
 export default function CareerSection() {
+  const [emailUrl, setEmailUrl] = useState("https://mail.google.com/mail/?view=cm&fs=1&to=Dispu301@gmail.com&su=Job%20Application%20-%20Disp%C3%BB%20Dining");
+
+  useEffect(() => {
+    // Check if mobile device (by user agent or screen width)
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+    
+    if (isMobile) {
+      // Use mailto on mobile for better native experience
+      setEmailUrl("mailto:Dispu301@gmail.com?subject=Job%20Application%20-%20Disp%C3%BB%20Dining");
+    }
+  }, []);
+
   return (
     <section className="relative z-10 -mt-24 mb-24 px-4 flex justify-center">
       {/* Subtle glow behind the card to separate it from the darkness */}
@@ -60,7 +74,7 @@ export default function CareerSection() {
 
           {/* CTA */}
           <div className="w-full pt-2">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Dispu301@gmail.com&su=Job%20Application%20-%20Disp%C3%BB%20Dining" target="_blank" className="block w-full">
+            <a href={emailUrl} target="_blank" className="block w-full">
               <Button className="w-full gap-2 relative group/btn" size="lg">
                 <Mail className="w-4 h-4" />
                 <span>Apply via Email</span>
