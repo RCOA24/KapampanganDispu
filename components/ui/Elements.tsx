@@ -1,5 +1,5 @@
 import React from "react";
-import { type ClassValue, clsx } from "clsx";
+import clsx, { type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 // Utility for merging tailwind classes safely

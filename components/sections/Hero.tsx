@@ -20,7 +20,7 @@ export default function Hero() {
           priority
         />
         {/* Gradient Overlay for Fade Effect */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#22264b]/95 via-[#22264b]/80 to-[#22264b]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#22264b]/55 via-[#22264b]/80 to-[#22264b]" />
       </div>
 
       <div className="z-10 max-w-4xl space-y-6">
